@@ -1,14 +1,19 @@
+s1 = {1, 2, 3, 'a', 'b', 1, 1}
+
+counter = 1
+for i in (dir(s1)):
+    if not i.ljust(8).startswith('__'):
+        print(f"{counter}. {i}()")
+        counter += 1
 
 s = set()
-s1 = {1,2,3, 'a', 'b', 1,1 }
 
-s2 = {1,2,3, 'a', 5, 6 }
-
+s2 = {1, 2, 3, 'a', 5, 6}
 
 # for i in dir(s1):
 # 	print(i)
 
-print("copy                        : ", s1.copy( ))
+print("copy                        : ", s1.copy())
 print("difference                  : ", s1.difference(s2))
 # print("difference_update           : ", s1.difference_update(s2 ))
 # print("discard                     : ", s1.discard( ))
@@ -30,6 +35,5 @@ print("update						:", s1)
 s1.remove(1)
 print("remove                      : ", s1)
 
-s1.clear( )
+s1.clear()
 print("clear                       : ", s1)
-

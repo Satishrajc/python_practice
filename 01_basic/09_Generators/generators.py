@@ -1,5 +1,3 @@
-
-
 # Normal function
 # def square(n):
 # 	result = []

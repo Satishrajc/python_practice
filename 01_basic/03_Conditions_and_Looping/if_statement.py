@@ -1,4 +1,3 @@
-
 # True --> int >1 --> Data type with items
 # false --> less or 0 --> Empty data type --> None
 
@@ -10,15 +9,10 @@
 flag = False
 
 if flag:
-	print(True)
+    print(True)
 elif flag is False:
-	print(False)
+    print(False)
 else:
-	print("Default")
-
+    print("Default")
 
 print(any())
-
-
-
-

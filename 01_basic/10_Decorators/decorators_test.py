@@ -1,22 +1,25 @@
 def decorator_function(f):
-	def warper1(a,b):
-		print('warper1')
-		f(a,b)
-	return warper1
+    def warper1(a, b):
+        print('warper1')
+        f(a, b)
+
+    return warper1
+
 
 class decorator_class():
-	def __init__(self, func):
-		self.func = func
+    def __init__(self, func):
+        self.func = func
 
-	def __call__(self, a, b):
-		self.func(a, b)
+    def __call__(self, a, b):
+        self.func(a, b)
 
 
 # @decorator_class
 
 @decorator_function
-def foo(a,b):
-	print("Foo")
+def foo(a, b):
+    print("Foo")
+
 
 foo(10, 20)
 

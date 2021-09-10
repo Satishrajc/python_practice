@@ -1,40 +1,40 @@
-
-
 class MyClass:
-	def __init__(self, first_name , last_name):
-		self.first_name = first_name
-		self.last_name = last_name
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name = last_name
 
-	def __str__(self):
-		return "String representation for end user"
+    def __str__(self):
+        return "String representation for end user"
 
-	def __repr__(self):
-		return "String representation for debugging"
+    def __repr__(self):
+        return "String representation for debugging"
 
-	@classmethod
-	def from_class_method(cls, name, age):
-		print("Class method")
-		return cls(name, age)
+    @classmethod
+    def from_class_method(cls, name, age):
+        print("Class method")
+        return cls(name, age)
 
-	@staticmethod
-	def from_staticmethod():
-		print("staticmethod")
+    @staticmethod
+    def from_staticmethod():
+        print("staticmethod")
 
-	@property
-	def fullname(self):
-		return f"{self.first_name} {self.last_name}"
+    @property
+    def fullname(self):
+        return f"{self.first_name} {self.last_name}"
 
-	@fullname.setter
-	def fullname(self, name):
-		self.first_name, self.last_name = name.split(' ')
-		# self.last_name = last_name
+    @fullname.setter
+    def fullname(self, name):
+        self.first_name, self.last_name = name.split(' ')
 
-	@fullname.deleter
-	def fullname(self):
-		print("In deleter")
+    # self.last_name = last_name
 
-		self.first_name = None
-		self.last_name = None
+    @fullname.deleter
+    def fullname(self):
+        print("In deleter")
+
+        self.first_name = None
+        self.last_name = None
+
 
 # obj1 = MyClass("Satish", 30)
 #
@@ -59,5 +59,3 @@ obj2.fullname = "Kaka 55"
 print(obj2.fullname)
 
 del obj2.fullname
-
-
