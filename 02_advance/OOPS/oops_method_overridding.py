@@ -44,8 +44,7 @@ print("-" * 20)
 obj1 = MyClass('Niteen', 34)
 obj2 = MyClass('Satish', 30)
 
-print("Overded inbuilt '+': ", obj1+obj2)
-
+print("Overded inbuilt '+': ", obj1 + obj2)
 
 print("-" * 20)
 print("Overded len() : ", len(obj1))

@@ -1,5 +1,43 @@
 # Python Practice
 
+## Key points to concentrate
+## Basics
+* Bytecode (.pyc)
+* Data structures (string, integer, list, tuple, dictionary, set)
+* Operators: logical and arithmetic --> &, or, not ---> =, !=, >, <, =>, =<, +, -, *, /, %, //
+* Basic methods: print, input, len, math, max, min, type, dir, help, range, enumerate, zip, round
+* All the key-words
+* What are the keywords/functions: pass, lambda, map, filter, any, yield
+* Conditions: if, else, elif
+* Loops: for, else, while and recursive, break, continue
+* Exceptions: try, except, else, finally
+* File handling: open, close, with, write, read, readline, readlines, seek, tell
+
+## Basics ++
+* Common functions: map, filter and lambda
+* Generators
+* Decorators with arguments and multiple decorators, class based decorators(__call__)
+* Regular expression
+* Inbuilt libraries: os, sys, time, datetime, calendar, logging, random, json, subprocess, argparse
+* Good libraries: numpy, matplot, openpyxl, openCV, pillow, 
+
+## Object-Oriented Programming (OOPS)Concepts
+* Class, instant
+* Class variable, class methods, normal methods,
+* Method variables, _semiPrivate variable,__ private variables, object._className__ private variables
+* Dander methods: __init__,__del__, __str__, __repr__, __iter__, __dir__, __name__
+* In build method: isintance, issubclass
+* Multiple Inheritance and Method resolution(MRO): Single , Multi-Level, Hierarchical and Multiple
+* Polymorphism: method overloading, method overriding, operation overloading
+* Decorators: @property, @setter, @deleter, @class method, @staticmethod
+
+
+## Advance
+* Threading and multithreading
+* Multiprocessing
+* Data structure and Algorithms
+* Pytest
+* Design patterns
 ## Data types in Python
 1. **List** is a collection which is ordered and changeable. Allows duplicate members.
 2. **Tuple** is a collection which is ordered and unchangeable. Allows duplicate members.
@@ -58,12 +96,5 @@
 
 ## Notes
 1. As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
+2. From Python3 tuple compression is act as  generators
 
-
-## Object-Oriented Programing (OOPs)
-1. Class and objects
-2. Encapsulation
-3. Inheritance
-4. Polymorphism
-5. Method overloading
-6. Method overriding

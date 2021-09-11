@@ -1,5 +1,6 @@
 class A:
     a = 20
+
     def __init__(self, arg1):
         self.arg1 = arg1
 
@@ -16,8 +17,5 @@ class B(A):
         print("Class B: " + self.arg1, self.a)
 
 
-
-
 b_obj = B("Hello")
 b_obj.get_info("Bye")
-

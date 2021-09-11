@@ -28,7 +28,7 @@ s = input("Input string :")
 
 # resDict = {'alnum': False, 'alpha': False, 'digit':False, 'uppercase': False}
 resDict = {}
-resDict.fromkeys(('alnum','alpha', 'digit', 'uppercase'), False)
+resDict.fromkeys(('alnum', 'alpha', 'digit', 'uppercase'), False)
 for i in s:
     if i.isalpha():
         resDict['alpha'] = True
@@ -40,6 +40,5 @@ for i in s:
 resDict['alnum'] = resDict['alpha'] and resDict['digit']
 
 print(resDict.values())
-
 
 # ------------------------------------------------ #
