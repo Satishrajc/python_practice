@@ -10,8 +10,9 @@ s = set()
 
 s2 = {1, 2, 3, 'a', 5, 6}
 
-# for i in dir(s1):
-# 	print(i)
+s2.update(s1)
+s2.add(200)
+print('Add 200 to set ', s2)
 
 print("copy                        : ", s1.copy())
 print("difference                  : ", s1.difference(s2))

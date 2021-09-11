@@ -1,0 +1,73 @@
+1. What are nolocal and global keywords used for?
+>> These two keywords are used to change the scope of a previously declared variable.
+nolocal is often used when you need to access a variable in a nested function
+
+2. What is the difference between classmethod and staticmethod?
+>> Both of them define a class method that can be called without instantiating an object of the class.
+class A:
+    @staticmethod
+    def func1():
+        pass
+    @classmethod
+    def func2(cls):
+        pass
+
+3. What is GIL and what are some of the ways to get around it?
+>> GIL stands for the Global Interpreter Lock and it is a mechanism Python is using for concurrency.
+It is built in deep into Python system and it is not possible at the moment to get rid of it.
+The major downside of GIL is that it makes threading not truly concurrent. It locks the interpreter,
+and even though it looks like you are working with threads, they are not executed at the same time,
+resulting in performance losses. Here are some ways of getting around it:
+
+- multiprocessing module. It lets you spawn new Python processes and manage them the same way you would manage threads
+- asyncio module. It effectively enables asyncronous programming and adds the async/await syntax. While it does not solve the GIL problem, it will make the code way more readable and clearer.
+- Stackless Python. This is a fork of Python without GIL. It’s most notable use is as a backend for the EVE Online game.
+
+4. çWhat are metaclasses and when are they used?
+>> Metaclasses are classes for classes. A metaclass can specify certain behaviour that is common for many classes for cases
+when inheritance will be too messy. One common metaclass is ABCMeta, which is used to create
+abstract classes.
+
+
+5. Function with type annotations
+>>
+def func1(x: int, y: str) -> bool:
+    return False
+
+
+6. What are generator functions? Write your own version of range
+>> def range(start, end, step):
+    cur = start
+    while cur > end:
+        yield cur
+        cur += ste
+
+7. What are *args and **kwargs in Python functions?
+>> It used to send if you have variable length of arguments r=to send to function
+one start(*) is used for list and two stars(**) used for dictionary
+
+8. What are .pyc files used for?
+>> .pyc files contain Python bytecode, same way as .class files in Java. Python is still considered an
+interpreted language, though, since this compilation phase occurs when you run the program, while in Java
+these a clearly separated.
+
+
+9. 4. What will the maximum length of an identifier?
+>> There is no certain length for Identifier; Identifier can be of any length.
+
+10. Explain Memory Management in Python?
+>> Python memory is management is done by python private heap space. All the objects and data structures of pythons are
+located in a private heap.
+
+10 .How to share global variable in Python?
+>> By creating a config file and store the global variable to be shared across modules.
+
+11. What is Lambda form in Python?
+>> Lambda keyword is used to create small random anonymous throw-away functions.
+# lambda argument(s): expression
+fuc = lambda x : x * X
+fun(10) --> output : 100
+
+12. What is Pickling in Python?
+>> Pickle is a standard module that serializes and de-serializes a Python object structure.
+

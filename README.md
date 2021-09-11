@@ -1,6 +1,12 @@
 # Python Practice
 
-Builtin functions for all the data types
+## Data types in Python
+1. **List** is a collection which is ordered and changeable. Allows duplicate members.
+2. **Tuple** is a collection which is ordered and unchangeable. Allows duplicate members.
+3. **Set** is a collection which is unordered and unindexed. No duplicate members.
+4. **Dictionary** is a collection which is ordered and changeable. No duplicate members.
+
+## Builtin functions for all the data types
 
 ### List
 1. list.append()
@@ -49,3 +55,15 @@ Builtin functions for all the data types
 15. symmetric_difference_update()
 16. union()
 17. update()
+
+## Notes
+1. As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
+
+
+## Object-Oriented Programing (OOPs)
+1. Class and objects
+2. Encapsulation
+3. Inheritance
+4. Polymorphism
+5. Method overloading
+6. Method overriding
