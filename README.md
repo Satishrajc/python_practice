@@ -38,6 +38,7 @@
 * Data structure and Algorithms
 * Pytest
 * Design patterns
+
 ## Data types in Python
 1. **List** is a collection which is ordered and changeable. Allows duplicate members.
 2. **Tuple** is a collection which is ordered and unchangeable. Allows duplicate members.
@@ -97,4 +98,5 @@
 ## Notes
 1. As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
 2. From Python3 tuple compression is act as  generators
+3. After slicing lists, change in the copied array will change the copying array elements
 
