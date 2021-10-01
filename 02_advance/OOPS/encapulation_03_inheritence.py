@@ -1,5 +1,6 @@
 class Parent:
     class_var = 'class_var'
+
     def __init__(self, public_var, protected_var, private_var):
         # Public variable
         self.public_var = public_var
@@ -52,7 +53,7 @@ print('_protected_method: ', obj1._protected_method())
 
 '''
 Note: 
- - Only Protected variable/method can be accessed in child  lcass 
+ - Only Protected variable/method can be accessed in child  class 
  - private variable/method can't be accessed in child class
  - Parent class variable can be accessed in child class
 '''

@@ -9,15 +9,6 @@ class MyClass:
     def __repr__(self):
         return "String representation for debugging"
 
-    @classmethod
-    def from_class_method(cls, name, age):
-        print("Class method")
-        return cls(name, age)
-
-    @staticmethod
-    def from_staticmethod():
-        print("staticmethod")
-
     @property
     def fullname(self):
         return f"{self.first_name} {self.last_name}"
@@ -35,12 +26,6 @@ class MyClass:
         self.first_name = None
         self.last_name = None
 
-
-# obj1 = MyClass("Satish", 30)
-#
-# MyClass.from_class_method("Dada", 34)
-#
-# obj1.from_staticmethod()
 
 # ------------------------------------------
 obj2 = MyClass("Mama", 50)

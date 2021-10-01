@@ -15,8 +15,9 @@ obj3 = Employee('Rakesh', 300, 'ADAS')
 obj4 = Employee('Deepa', 150, 'ADAS')
 obj5 = Employee('Sina', 300, 'ADAS')
 
-# obj5 = Employee('Sina', None, 'ADAS')
-
+'''
+Fetching salary of each class who is in ADAS
+'''
 
 L = [obj1, obj2, obj2, obj3, obj4, obj5]
 
