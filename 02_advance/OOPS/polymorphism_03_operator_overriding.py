@@ -16,12 +16,15 @@ class Point:
         return result
 
 
-p1 = Point(2, 3)
-p2 = Point(-1, 2)
-print(p1 + p2)
+print("ADDITION")
+object1 = Point(2, 3)
+object2 = Point(-1, 2)
+
+# Use of operator overriding to add two objects
+print(object1 + object2)
 
 print('------')
-print("SUB")
-p3 = Point(3, 5)
-p4 = Point(4, 4)
-print(p3 - p4)
+print("SUBTRACTION")
+object3 = Point(3, 5)
+object4 = Point(4, 4)
+print(object3 - object4)
