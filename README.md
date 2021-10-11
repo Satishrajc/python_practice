@@ -100,3 +100,19 @@
 2. From Python3 tuple compression is act as  generators
 3. After slicing lists, change in the copied array will change the copying array elements
 
+
+## Git setup
+
+#### Generating a new SSH key and adding it to the ssh-agent:
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+
+#### Adding a new SSH key to your GitHub account:
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account
+
+#### Testing your SSH connection:
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/testing-your-ssh-connection
+
+#### Creating a personal access token:
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
+
+
