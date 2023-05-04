@@ -53,3 +53,14 @@ print("title       : ", s.title())
 # print("translate   : ", s.translate())
 print("upper       : ", s.upper())
 # print("zfill       : ", s.zfill(10))
+
+
+# ----------------------------------------
+print("\nString Concatination:")
+x, y = "Hi", 5
+print("x*y: ", x*y)
+
+x, y = "Hi", "Satish"
+print("x+y: ", x+y)
+
+
