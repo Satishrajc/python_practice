@@ -1,3 +1,10 @@
+"""
+In Python, @property is a built-in decorator that allows us to define 
+a method that behaves like an attribute. It provides a convenient way to 
+encapsulate the access to an object's attributes, allowing us to control 
+how they are accessed or modified.
+"""
+
 class MyClass:
     def __init__(self, first_name, last_name):
         self.first_name = first_name

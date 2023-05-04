@@ -1,11 +1,14 @@
 '''
-Class method vs Static Method
-A class method takes cls as the first parameter while a static method needs no specific parameters.
-A class method can access or modify the class state while a static method can’t access or modify it.
-In general, static methods know nothing about the class state. They are utility-type methods that take
-some parameters and work upon those parameters. On the other hand class methods must have class as a parameter.
-We use @classmethod decorator in python to create a class method and we use @staticmethod decorator to create a
-static method in python.
+In Python, both @classmethod and @staticmethod are used to define methods 
+that belong to a class rather than to an instance of the class. However, 
+there is a subtle difference between the two.
+
+@classmethod is used to define a method that is bound to the class and not 
+the instance of the class. The method can access and modify the class state 
+that applies to all instances of the class. It takes the class as the first argument, 
+which is usually called cls.
+
+Here's an example of @classmethod:
 
 * The class method can only access the class attributes but not the instance attributes.
 * The class method can be called using ClassName.MethodName() and also using object.
@@ -16,31 +19,39 @@ We generally use class method to create factory methods. Factory methods return 
 We generally use static methods to create utility functions.
 '''
 
-# Python program to demonstrate
-# use of a class method and static method.
-from datetime import date
+class MyClass:
+    class_variable = 0
 
-
-class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+    def __init__(self, instance_variable):
+        self.instance_variable = instance_variable
 
     @classmethod
-    def age_form_birth_year(cls, name, year):
-        return cls(name, date.today().year - year)
+    def class_method(cls, num):
+        cls.class_variable += num
 
+my_obj1 = MyClass(10)
+my_obj2 = MyClass(20)
+
+MyClass.class_method(5)  # adds 5 to class_variable
+print(MyClass.class_variable)  # output: 5
+
+my_obj1.class_method(10)  # adds 10 to class_variable
+print(MyClass.class_variable)  # output: 15
+
+"""
+@staticmethod, on the other hand, is used to define a method that is bound to 
+the class and not the instance of the class, but it does not take any special 
+first argument like cls. It is mainly used to group utility functions related
+to the class, which do not require access to the class or instance state.
+
+In this example, the static_method() function does not require access to the 
+instance or class state, so it is defined as a @staticmethod. Note that we can 
+call the method using the class name MyClass without instantiating the class.
+"""
+
+class MyClass:
     @staticmethod
-    def is_adult(age):
-        return age > 18
-
-
-person1 = Person('Satish', 21)
-person2 = Person.age_form_birth_year('Niteen', 1996)
-
-print(person1.age)
-print(person2.age)
-
-# print the result
-print(Person.is_adult(22))
-print(person1.is_adult(15))
+    def static_method(x, y):
+        return x + y
+    
+print(MyClass.static_method(2, 3))  # output: 5

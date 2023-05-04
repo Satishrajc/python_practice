@@ -1,3 +1,12 @@
+"""
+Encapsulation refers to the concept of wrapping data and methods together 
+within a single unit, which can then be used to control the access to the 
+data and methods from outside the unit. This is done to prevent direct 
+access to the data and methods, which can lead to unintended modifications 
+and errors. In Python, encapsulation can be achieved through the use of 
+private and protected attributes and methods.
+"""
+
 class Parent:
     def __init__(self, public_var, protected_var, private_var):
         # Public variable
@@ -37,3 +46,5 @@ print('_protected_method: ', obj1._protected_method())
 
 # Error:AttributeError: 'Parent' object has no attribute '__private_var'
 # print('__private_method: ',obj1.__private_method)
+
+

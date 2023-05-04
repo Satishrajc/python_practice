@@ -1,48 +1,40 @@
-'''
+"""
+In Python, a metaclass is a class that defines the behavior of other classes. 
+It is used to control the creation of classes, much like classes control the creation of instances.
 
-Here we changing all the class variable and methods in class 'MyClass" to upper case
-'''
+In this example, MyMeta is the metaclass that defines the behavior of MyClass. 
+When we define MyClass with metaclass=MyMeta, Python automatically calls the 
+__new__ method of MyMeta with arguments MyClass, a tuple of base classes, and 
+a dictionary of class attributes.
 
+In the __new__ method of MyMeta, we can modify the dictionary of attributes as we like. 
+In this case, we add two class attributes, class_name and class_variables, to the attrs 
+dictionary. We then call super().__new__ with the same arguments, which creates and 
+returns the new class object with the modified attributes.
 
-class MetaClass(type):
-    def __new__(mcs, class_name, inherited_classes, attributes):
-        print("in __new__")
-        # print(f'class_name: {class_name:>15}')
-        # print(f'inherited_classes:', inherited_classes)
-        # print(f'attributes: ', attributes)
-
-        upper_case_var_method = {}
-        for k, v in attributes.items():
-            if k.startswith('__'):
-                upper_case_var_method[k] = v
-            else:
-                upper_case_var_method[k.upper()] = v
-
-        return type(class_name, inherited_classes, upper_case_var_method)
+Finally, when we access the class_name and class_variables attributes of MyClass, 
+they have the values we set in the MyMeta metaclass. Note that MyMeta can define 
+any behavior we want for MyClass, and we can define multiple metaclasses to apply 
+different behaviors to different classes.
+"""
 
 
-class Dummy:
+class MyMeta(type):
+    def __new__(cls, name, bases, attrs):
+        print("In __new__")
+        print(f" name: {name}, bases: {bases}, attrs: {attrs}")
+        attrs["class_name"] = name
+        attrs["class_variables"] = {}
+        return super().__new__(cls, name, bases, attrs)
+
+class MyClass(metaclass=MyMeta):
     pass
 
-
-class MyClass(Dummy, metaclass=MetaClass):
-    x = 10
-    y = 20
-
-    def __init__(self, name):
-        self.name = name
-
-    def get_name(self):
-        print(self.name)
-
-
-'''
+"""
 Run the code without creating object - output: in __new__
 __new__ will be called even before creating the object
 
 The parameters will be automatically passed to Meta class
-'''
-
-obj = MyClass('Satish')
-# obj.get_name()  # Gives Error because we made everything in uppercase
-obj.GET_NAME()
+"""
+print(MyClass.class_name)  # output: MyClass
+print(MyClass.class_variables)  # output: {}

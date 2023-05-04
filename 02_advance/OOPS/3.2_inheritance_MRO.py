@@ -1,9 +1,10 @@
-'''
+"""
 
 Method resolution order:
-In Python, every class whether built-in or user-defined is derived from the object class and all
-the objects are instances of the class object. Hence, the object class is the base class for all
-the other classes.
+In Python, every class whether built-in or user-defined is derived from 
+the object class and all the objects are instances of the class object. 
+Hence, the object class is the base class for all the other classes.
+
 In the case of multiple inheritance, a given attribute is first searched in the current class if
 it’s not found then it’s searched in the parent classes. The parent classes are searched in a
 depth-first, left-right fashion and each class is searched once.
@@ -21,10 +22,11 @@ Eg. Class4.__mro__
 Super() is generally used with the __init__ function when the instances are initialized.
 The super function comes to a conclusion, on which method to call with the help of the
 method resolution order (MRO).
-'''
+"""
 
 # Python Program to depict multiple inheritance
 # when method is overridden in both classes
+
 
 class Class1:
     def m(self):
