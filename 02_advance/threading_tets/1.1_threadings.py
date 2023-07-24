@@ -29,6 +29,9 @@ for _ in range(5):
     threading_lit.append(t)
 
 for thread in threading_lit:
+    thread.start()
+    
+for thread in threading_lit:
     thread.join()
 
 finish = time.perf_counter()

@@ -8,9 +8,9 @@ listArray = np.array([[1, 2, 3], [4, 5, 6], [6, 7, 8]])
 
 # print('listArray: ', listArray)
 #
-# print('listArray.shape: ', listArray.shape)
-# print('listArray.dtype: ', listArray.dtype)
-# print('listArray.size: ', listArray.size)
+print('listArray.shape: ', listArray.shape)
+print('listArray.dtype: ', listArray.dtype)
+print('listArray.size: ', listArray.size)
 
 arg = np.arange(15)
 # print('arange: ', arg)
@@ -61,11 +61,11 @@ listArray1 = np.array([1, 2, 3, 400, 5, 6])
 
 
 listArray1 = np.array([1, 2, 3, 400, 5, 6])
-print('sqrt: ', np.sqrt(listArray1))
-print('max: ', np.max(listArray1))
-print('min: ', np.min(listArray1))
-print('sum: ', np.sum(listArray1))
+# print('sqrt: ', np.sqrt(listArray1))
+# print('max: ', np.max(listArray1))
+# print('min: ', np.min(listArray1))
+# print('sum: ', np.sum(listArray1))
 
 
 listArray2 = np.array([[1, 2, 3], [4, 5, 6], [6, 7, 8], [9, 10, 11]])
-print(np.where(listArray2 > 10))
+# print(np.where(listArray2 > 10))
