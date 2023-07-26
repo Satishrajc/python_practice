@@ -7,12 +7,12 @@ value = 0
 def read_value():
     global value
     time.sleep(1)
-    print("Read value is: " + str(value))
+    print("Read value is: ",  value)
 
 
 def increment_value():
     global value
-    print("Value before incrementing: " + str(value))
+    print("Value before incrementing: ", value)
     value += 1
 
 

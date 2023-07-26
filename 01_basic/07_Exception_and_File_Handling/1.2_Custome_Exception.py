@@ -1,3 +1,7 @@
+
+# The super().__init__(message) call is used to ensure that the base 
+# Exception class is properly initialized with the provided message.
+
 class MyException(Exception):
     def __init__(self, msg):
         super(MyException, self).__init__(msg)
@@ -9,7 +13,7 @@ try:
     raise MyException('Custom message')
 
 except MyException as e:
-    print(e)
+    print("User defined exception occurred: ", e)
 else:
     print('Exception does not happened')
 finally:

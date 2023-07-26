@@ -14,9 +14,3 @@ while data_list:
     data_list.remove(minimum)    
 
 print(sorted_list)
-
-import datalinker
-
-pip install datalinker
-
-a = get('param')

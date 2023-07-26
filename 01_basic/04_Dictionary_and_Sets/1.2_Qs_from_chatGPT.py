@@ -45,7 +45,6 @@ def get_key_with_max_value(d):
             return key
 
 # Sort a dictionary by its values.
-
 def sort_dict_by_value(d):
     return dict(sorted(d.items(), key=lambda item: item[1]))
 
