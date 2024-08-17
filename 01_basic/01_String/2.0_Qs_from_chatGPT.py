@@ -62,5 +62,5 @@ def most_common_char(s):
 # remove_vowels("Satish")
 # first_non_repeating_char("ssDDmaak")
 # count_words("Satishqqqq")
-# most_common_char("Saastishaa")
+most_common_char("Saastishaa")
 

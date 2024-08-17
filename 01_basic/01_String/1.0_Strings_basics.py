@@ -8,7 +8,7 @@ print(help(str.lower))
 print("capitalize  : ", s.capitalize())  # Output: " helloworld!! work hard, i am doing good!"
 print("casefold    : ", s.casefold())    # Output: " helloworld!! work hard, i am doing good! "
 print("center      : ", s.center(50))    # Output: "       HelloWorld!! Work Hard, I am doing good!       "
-print("count       : ", s.count("d"))    # Output: 3
+print("count       : ", s.count("d"))    # Output: 4
 print("encode      : ", s.encode())      # Output: b' HelloWorld!! Work Hard, I am doing good! '
 print("endswith    : ", s.endswith("od! "))  # Output: True
 print("expandtabs  : ", s.expandtabs())  # Output: " HelloWorld!! Work Hard, I am doing good! " (no effect since no tabs are present)
