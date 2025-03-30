@@ -1,6 +1,4 @@
-d = {"Name":"Satish", "lastname": "Chougule"}
+s = " HelloWorld!! Work Hard, I am doing good! "
 
-D = {'name': 'Satish', 'age': 30, 'gender': "M"}
-d = D.fromkeys((i for i in range(10)), None)
-
-print(d)
+# Prints all available attributes and methods for strings
+print(dir(s))  

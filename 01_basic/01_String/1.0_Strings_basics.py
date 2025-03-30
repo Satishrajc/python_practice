@@ -3,7 +3,7 @@ s = " HelloWorld!! Work Hard, I am doing good! "
 # Prints all available attributes and methods for strings
 print(dir(s))  
 # Prints documentation for the `str.lower()` method
-print(help(str.lower))  
+print(help(str.lower))
 
 print("capitalize  : ", s.capitalize())  # Output: " helloworld!! work hard, i am doing good!"
 print("casefold    : ", s.casefold())    # Output: " helloworld!! work hard, i am doing good! "

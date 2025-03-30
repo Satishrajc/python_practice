@@ -5,7 +5,7 @@ name = input("Enter a your name: ")
 
 print(f"type: {type(name)} : {name}")
 
-# By defaulr end="\n"Satish
+# By defaulr end="\n"
 print("Hi End with something", end="|")
 print("next string")
 
@@ -48,5 +48,5 @@ print(f"Scientific Notation: {large_number:.2e}")  # Output: 1.23e+09
 # ---------------------------------------------------------------------
 
 # Taking comma separated multiple inputs
-data = input("Entrer comma separated inytergers: ").strip().split(" ")
-print("Comma spearted inputs: ", data)
+data = input("Enter comma separated integers: ").strip().split(" ")
+print("Comma separated inputs: ", data)

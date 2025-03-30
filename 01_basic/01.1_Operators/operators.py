@@ -21,18 +21,18 @@ Condition operators
 """
 
 """
-Logical operators
+Logical operators (in the order of presidency)
+not
 and
 or
-not
 """
 
 """
 in
-is
+is (compares the memory address)
 not in
 """ 
 # is vs ==
 
-print('a' > 'Z') # False: as Python consider ASCII values to compare: to know print(ord(a))
+print('a' > 'Z')  # False: as Python consider ASCII values to compare: to know print(ord(a))
 

@@ -24,7 +24,6 @@ def reverse_list(L):
 # reverse_list([1, 2, 3, 4, 5])
 
 # Write a Python function to check if a list is sorted (either ascending or descending).
-
 def is_sorted(L):
     ascending_sorted = sorted(L)
     descending_sorted = ascending_sorted[::-1]
@@ -89,7 +88,7 @@ def merge_sorted_lists(lst1, lst2):
 # Write a Python function to rotate a list by k elements to the right.
 def rotate_list(lst, k):
     # Method 1
-    lst1 , lst2= lst[k+1:], lst[:k+1]
+    lst1, lst2 = lst[k+1:], lst[:k+1]
     lst1.extend(lst2)
     print(lst1)
 
